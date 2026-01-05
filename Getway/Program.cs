@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Getway.Services;
+using Getway.Infrastructure;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -59,6 +60,7 @@ builder.Services.AddAuthorization(options =>
 });
 
 builder.Services.AddAuthorization();
+builder.Services.AddIInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
