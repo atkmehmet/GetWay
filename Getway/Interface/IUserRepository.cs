@@ -1,6 +1,8 @@
 ﻿namespace Getway.Interface
 {
-    public class UserRepository
+    public interface IUserRepository
     {
+        Task AddUser(int user);
+        Task<List<int>> ints();
     }
 }

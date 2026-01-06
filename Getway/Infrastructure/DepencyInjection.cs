@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Sq
+﻿using Getway.Interface;
+using Microsoft.EntityFrameworkCore;
 namespace Getway.Infrastructure
 {
     public static class DepencyInjection
@@ -7,13 +8,10 @@ namespace Getway.Infrastructure
         public static IServiceCollection AddIInfrastructure( this IServiceCollection services, IConfiguration configuration)
         {
 
-            services.AddDbContext<AppDb>(
-                configuration=> 
-                configuration.Use()
-                );
+            services.AddScoped<IUserRepository, UserRepository>();
 
 
-            return services;
+           return services.AddIInfrastructure(configuration);
         }
     }
 }
