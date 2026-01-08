@@ -1,4 +1,5 @@
 ﻿
+using Getway.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace Getway.Infrastructure

@@ -11,6 +11,11 @@ namespace Getway.Infrastructure
             services.AddScoped<IUserRepository, UserRepository>();
 
 
+
+
+
+
+
            return services.AddIInfrastructure(configuration);
         }
     }
