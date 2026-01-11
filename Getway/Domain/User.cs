@@ -1,4 +1,4 @@
-﻿namespace Getway.Infrastructure
+﻿namespace Getway.Domain
 {
     public class User
     {  
