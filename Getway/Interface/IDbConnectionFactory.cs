@@ -2,5 +2,6 @@
 {
     public interface IDbConnectionFactory
     {
+        IDbConnectionFactory Create();
     }
 }

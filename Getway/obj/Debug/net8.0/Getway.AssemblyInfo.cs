@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Getway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12fd609759d3f533d2d69f75d073333094d872d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9d302e3bcffa909f23f3656f262f8d543fa8589")]
 [assembly: System.Reflection.AssemblyProductAttribute("Getway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Getway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
