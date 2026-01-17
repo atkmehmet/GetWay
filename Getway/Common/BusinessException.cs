@@ -1,6 +1,7 @@
 ﻿namespace Getway.Common
 {
-    public class BusinessException
+    public class BusinessException:Exception
     {
+        public BusinessException(string message) : base(message) { }
     }
 }
