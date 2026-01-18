@@ -2,30 +2,27 @@
 
 namespace Getway.Common
 {
-    public class Result
+    public class Result<T>
     {
         public bool IsSuccess { get; set; }
 
         public string Message { get; set; } = string.Empty;
 
-        public object? Data { get; set; }
+        public T? Data { get; set; }
 
-        public Result(object data,bool isSucces ,string? errorMessages ) { 
-        
+        public Result  (T? data,bool isSucces ,string? errorMessages ) 
+        {
                    IsSuccess = isSucces;
-                   Message = errorMessages;
-                   Data = data;  }
-
-
-
-        public static Result Success(string? messages = null, object data) 
+                   Message = errorMessages ?? string.Empty;
+                   Data = data;  
+        }
+        public static Result<T> Success(T data, string? messages = null ) 
         {
 
-            return new Result(data, true, messages);                
+            return new Result<T>(data, true, messages);                
         }
-
-        public static Result Failure(string messages,object? data = null) {
-            return new Result(data, false, messages);
+        public static Result<T> Failure(string messages,T? data = default) {
+            return new Result<T>(data, false, messages);
         }
     
             
